@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'moon-get';
+    src: url('fonts/moon_get-Heavy.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family:'clementebook';
+    src: url('fonts/ClementePDag-Book.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family:'clementebookitalic';
+    src: url('fonts/ClementePDah-BookItalic.ttf') format('truetype');
+  }
+
+/* Variable */
+/* Bleu:#234db9 */
+/* Beige: #d4cabe */
+/* Noir : #00000 */
+/* Bleu ciel : #00ffea */
+/* Orange : #e3521b */
+
+
+.body {
+  background-color: #d4cabe;
+  font-family:"moon-get";
+  padding-bottom:50px;
+}
+
+.body a{
+  text-decoration: none;
+}
+
+.body a:hover{
+color:#00ffea;
+}
+
+::selection {
+  background-color: #e3521b;
+}
+
+
+/* entete */
+
+.entete {
+  text-transform: uppercase;
+  border:6px solid #234db9;
+  margin: 52px 0px 50px 120px;
+  padding: 25px;
+  height:192px;
+}
+
+.entete h1 {
+  color:#234db9;
+  font-size:4rem;
+}
+
+.entete h2 {
+  font-size:1.6rem;
+}
+
+a .entete h2 {
+  color:black;
+}
+
+a .entete h2:hover{
+  color:black;
+}
+
+.logo {
+  float:right;
+  margin: 37px 100px 20px 0px;
+}
+
+/* entete xs */
+
+@media (max-width: 768px) {
+  .entete {
+    margin: 5%;
+    height:unset;
+  }
+
+  .entete h1 {
+    font-size:1.5rem;
+  }
+
+  .entete h2 {
+    font-size:1rem;
+  }
+
+  .logo {
+    float:left;
+    margin :0;
+  }
+
+}
+
+/* Présentation et menu */
+
+
+.presentation {
+  border:5px solid #234db9;
+  margin:0 100 10 10;
+  padding:20;
+}
+
+.menu {
+margin: 30 100 20 10;
+text-transform: uppercase;
+font-size: 1.5rem;
+}
+
+.menu a {
+  background-color: #234db9;
+  width:200px;
+  height: 150px;
+  color:#d4cabe;
+}
+
+.menu a:hover {
+  background-color: #e3521b;
+  color:#234db9;
+}
+
+.menu-1{
+  margin-top:116px;
+  margin-left:2px;
+}
+
+.menu-2 {
+  margin-left:2px;
+}
+
+.menu-3 {
+  margin-top:60px;
+  margin-left:50px;
+}
+
+/* presentation et menu xs */
+
+@media (max-width: 768px) {
+
+ .presentation {
+    margin: 10 25 10 25;
+  }
+
+  .menu a {
+    margin:10%;
+    width:100%;
+  }
+
+  .menu-1 {
+    margin-top:0px;
+    margin-left:0px;
+  }
+
+  .menu-2 {
+    margin-left:0px;
+  }
+
+  .menu-3{
+    margin-top:0px;
+    margin-left:0px;
+  }
+
+}
+
+/* animation poisson */
+
+.illustration {
+  position: relative;
+}
+
+.poisson{
+  animation-name: poisson;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 42%;
+  left:42%;
+
+}
+@keyframes poisson{
+  50%{
+    transform: translateY(-200px) translateX(200px);
+  }
+}
+
+/* page ressources */
+
+.ressources .presentation {
+  border: 5px solid #e3521b;
+  color:#234db9;
+}
+
+.ressources .presentation p {
+  font-family: "clementebook";
+}
+
+.ressources .presentation p i {
+  font-family:"clementebookitalic";
+}
+
+.ressources .presentation p strong {
+  font-weight: bold;
+}
+
+.poissonressources {
+  position:relative;
+  top:55px;
+  left:130px;
+  margin-top:-5%;
+  animation-name:poisson-ressources;
+  animation-duration: 120s;
+}
+
+@keyframes poisson-ressources {
+  50%{
+  transform: translateX(600px);
+  }
+}
+.ressources .illustration {
+  background-color: #e3521b;
+  height:1000px;
+  margin-right:5%;
+  color:#234db9;
+  padding:10%;
+  font-size:1.4rem;
+}
+
+.ressources .illustration img {
+  position:relative;
+  left:-50%;
+}
+
+.ressources .illustration h3 {
+  text-transform: uppercase;
+  font-size:2.5vw;
+}
+
+.ressources .menu a {
+  background-color: #e3521b;
+  color:#234db9;
+}
+
+.ressources .menu a:hover {
+  background-color: #234db9;
+  color:#d4cabe;
+}
+
+
+/* contact */
+
+.titre-contact {
+  background-color: #234db9;
+  color:#e3521b;
+  height:160px;
+  padding-top:110px;
+  padding-right:10px;
+  margin-bottom:20px;
+}
+
+.titre-contact h3 {
+  text-transform: uppercase;
+  float:right;
+}
+
+.contact .presentation {
+  margin: 0 100 10 10;
+  color:#e3521b;
+  font-family:"clementebook";
+  text-transform: uppercase;
+  background-color: #d4cabe;
+  font-size:1.2rem;
+}
+
+.contact .presentation p {
+  justify-content: center;
+  display:flex;
+}
+
+.contact .presentation img {
+  margin-top:40px;
+}
+
+.contact .menu {
+  margin-bottom:100px;
+  padding-bottom:20px;
+}
+
+.contact {
+  background-image: url(media/grandescalier.png);
+  background-size: 58%;
+  background-repeat: no-repeat;
+  background-position-x: 19%;
+  background-position-y: 86%;
+  padding-top:25px;
+}
